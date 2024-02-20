@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Rainerius Samson</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Rainerius Samson</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>     
+                </div>
+            </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/rain.png" alt="Rainerius Samson profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello I'm</p>
+            <h1 class="title">Rainerius Samson</h1>
+            <p class="section__text__p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/RESUME_RAIN_1.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='/#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/instagram.png" alt="My Instagram profile" class="icon" onclick="location.href='https://www.instagram.com/rainnsamson/'">
+                <img src="./assets/facebook.png" alt="My Facebook profile" class="icon" onclick="location.href='https://www.facebook.com/beerus.reyes/'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title"> About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/2nd.jpg" alt="Profile Picture" class="about-pic">
+            </div>
+         <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>B. Sc. Information Technology (IT)</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        I'm Rainerius Samson, a versatile Frontend Developer skilled in UI/UX Design, Graphic Design, Photo Editing, Data Entry, Encoding, Product Research, and Product Listing.
+
+                        Passionate about crafting intuitive user experiences, I excel in web development and related tasks. Whether designing interfaces or optimizing product listings, I approach each project with enthusiasm and commitment.
+
+                        With a keen eye for detail and a drive for excellence, I believe in collaboration and lifelong learning. Let's collaborate to create impactful solutions in the digital world.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-container">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">FIELDTECH SPECIALIST INC. <br><br></h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Web Developer</h3>
+                                <p>November 2017 - March 2018</p>
+                                <!-- Baguhin ang pagkakalagay ng button -->
+                                <button class="btn btn-color-1" onclick="openModal('modal1')">View Duties</button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">FREELANCER <br><br><br></h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Web Developer</h3>
+                                <p>November 2017 - March 2018</p>
+                                <!-- Baguhin ang pagkakalagay ng button -->
+                                <button class="btn btn-color-1" onclick="openModal('modal2')">View Duties</button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">IMMACULATE HEART OF MARY ACADEMY</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Web Developer</h3>
+                                <p>November 2017 - March 2018</p>
+                                <!-- Baguhin ang pagkakalagay ng button -->
+                                <button class="btn btn-color-1" onclick="openModal('modal3')">View Duties</button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">CARAGA INSTITUTE OF TECHNOLOGY</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Web Developer</h3>
+                                <p>November 2017 - March 2018</p>
+                                <!-- Baguhin ang pagkakalagay ng button -->
+                                <button class="btn btn-color-1" onclick="openModal('modal4')">View Duties</button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-container">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/POSTERLOGO.jpg" alt="Project 1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Posters</h2>
+                <div class="btn-container">
+                    <!-- Update the button to trigger the project modal -->
+                    <button class="btn btn-color-2 project-btn" onclick="openProjectModal('poster')">
+                        View Projects
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/BANNERLOGO.jpg" alt="Project 1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Banners</h2>
+                <div class="btn-container">
+                    <!-- Update the button to trigger the project modal -->
+                    <button class="btn btn-color-2 project-btn" onclick="openProjectModal('banner')">
+                        View Projects
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/LOGOMAIN.jpg" alt="Project 1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Logo</h2>
+                <div class="btn-container">
+                    <!-- Update the button to trigger the project modal -->
+                    <button class="btn btn-color-2 project-btn" onclick="openProjectModal('logo')">
+                        View Projects
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/FLYERLOGO.jpg" alt="Project 1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Flyers</h2>
+                <div class="btn-container">
+                    <!-- Update the button to trigger the project modal -->
+                    <button class="btn btn-color-2 project-btn" onclick="openProjectModal('flyers')">
+                        View Projects
+                    </button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#services'">
+    </section>
+    <section id="services">
+        <p class="section__text__p1">My</p>
+        <h1 class="title">Services</h1>
+        <div class="experience-details-container">
+            <div class="about-container">
+                <div class="details-container color-container">
+                    <div class="article-container-j">
+                        <article class="article-container-service">
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Frontend Developer</h3>
+                            </div>
+                        </article>
+                        
+                        <article class="article-container-service">
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>UI/UX Design</h3>
+                            </div>
+                        </article>
+                        <article class="article-container-service">
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Graphic Design</h3>
+                            </div>
+                        </article>
+                        <article class="article-container-service">
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Photo Editor</h3>
+                            </div>
+                        </article>
+                        <article class="article-container-service">
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Incoder</h3>
+                            </div>
+                        </article>
+                        <article class="article-container-service">
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Data Entry</h3>
+                            </div>
+                        </article>
+                        <article class="article-container-service">
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Product Lister</h3>
+                            </div>
+                        </article>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon">
+                <p><a href="raineriussamson@gmail.com">Gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="Email icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/rainerius-samson-722435288/">LinkedIn.com</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Rainerius Samson. All Rights Reserved.</p>
+    </footer>
+
+        <!-- Modal Experience 1 -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <h2>Duties & Responsibilities</h2>
+        <ul>
+            <li>Create website layout/user interfaces by using standard HTML, CSS, Javascript and Bootstrap practices</li>
+            <li>Arrange project requirements in programming sequence by analyzing requirements; preparing a workflow chart and diagram using knowledge of computer capabilities, subject matter, programming language, and logic</li>
+            <li>Encode project requirements by converting workflow information into computer language</li>
+            <li>Maintain client confidence and protect operations by keeping information confidential</li>
+            <li>Write well designed, testable, efficient code by using best software development practices</li>
+            <li>Develop new user-facing features</li>
+            <li>Build reusable code and libraries for future use</li>
+            <li>Ensure the technical feasibility of UI/UX designs</li>
+            <li>Maintain and improve website</li>
+            <li>Assure that all user input is validated before submitting to the back-end</li>
+            <li>Collaborate with other team members and stakeholders</li>
+            <li>Edit and design IDs</li>
+            <li>Create own icon pictures</li>
+            <li>Create a logo design for projects</li>
+        </ul>
+    </div>
+</div>
+<!-- Modal Experience 2 -->
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <h2>Duties & Responsibilities</h2>
+        <ul>
+            <li>Meet the deadlines. Deliver on time within projects</li>
+            <li>Finishing before deadline</li>
+            <li>Maintain the company site that we created</li>
+            <li>Fixing bugs and errors.</li>
+            <li>Improve the website of the clients</li>
+            <li>Analysing and solving the problem of clients website</li>
+        </ul>
+    </div>
+</div>
+<!-- Modal Experience 3 -->
+<div id="modal3" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <h2>Duties & Responsibilities</h2>
+        <ul>
+            <li>Installing and configuring computers hardware, software, systems, networks, printers, and scanners</li>
+            <li>Monitoring and maintaining computer systems and networks</li>
+            <li>Setting up a accounts for new users</li>
+            <li>Repairing and replacing equipment as necessary</li>
+            <li>Testing new technology</li>
+            <li>Editing and creating, like editing photos, creating posters, banners etc. using Adobe Photshop, Adobe Illustrator and Canva</li>
+            <li>Entering and monitoring data of the students in the system</li>
+            <li>Teaching computer basics to students</li>
+        </ul>
+    </div>
+</div>
+<!-- Modal Experience 4 -->
+<div id="modal4" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal4')">&times;</span>
+        <h2>Duties & Responsibilities</h2>
+        <ul>
+            <li>Installing and configuring computers hardware, software, systems, networks, printers, and scanners</li>
+            <li>Monitoring and maintaining computer systems and networks</li>
+            <li>Setting up a accounts for new users</li>
+            <li>Repairing and replacing equipment as necessary</li>
+            <li>Testing new technology</li>
+            <li>Editing and creating, like editing photos, creating posters, banners etc. using Adobe Photshop, Adobe Illustrator and Canva</li>
+            <li>Entering and monitoring data of the students in the system</li>
+            <li>Devoploping software application using C# and SQL Database</li>
+            <li>Taking photos in events for the documentations</li>
+        </ul>
+    </div>
+</div>
+<!-- Modal Projects 1 -->
+<div id="projectModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('projectModal')">&times;</span>
+        <h2>Projects</h2>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
