@@ -373,12 +373,15 @@ article .icon {
     padding: 20px;
     padding-left: 50px;
     border: 1px solid #888;
-    width: 40%;
+    max-width: 90%; /* Set maximum width for the modal */
+    width: auto; /* Set width to auto to adjust based on content */
     border-radius: 2rem;
     position: fixed; 
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
+    max-height: 80vh; /* Set maximum height for the modal */
+    overflow-y: auto; /* Add vertical scrollbar if needed */
 }
 
 
@@ -507,3 +510,4 @@ footer {
 footer p {
     text-align: center;
 }
+

@@ -135,3 +135,44 @@
         width: 90%; /* Baguhin ang laki ng modal sa mga mas maliit na viewport */
     }
 }
+
+@media (max-width: 768px) {
+    .modal-content {
+        width: 70%;
+        padding-left: 50px;
+        padding-right: 20px;
+    }
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Project Images in Modal */
+.project-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Adjust gap as needed */
+}
+
+.project-images img {
+    width: calc(33.33% - 0.67rem); /* Calculate width to fit three images in a row with gap */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 2rem; /* Add border radius if needed */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
